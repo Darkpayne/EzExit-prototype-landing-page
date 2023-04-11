@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ez Exit</title>
+    <style>
+      .headers {
+        font-family: "Nunito Sans", sans-serif;
+      }
+      .headFont {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-white sticky top-0 z-[10] border-gray-200 shadow-lg">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="" class="flex items-center">
+          <img src="./src/assets/ez.png" class="h-[3rem] mr-3" />
+        </a>
+        <div class="flex items-center md:order-2">
+          <button
+            type="button"
+            data-dropdown-toggle="language-dropdown-menu"
+            class="lg:inline-flex headers hidden items-center font-medium uppercase justify-center px-5 py-3 hover:text-white hover:bg-violet-700 rounded-lg cursor-pointer duration-500 border border-violet-700"
+          >
+            Login
+          </button>
+
+          <button
+            data-collapse-toggle="mobile-menu-language-select"
+            type="button"
+            id="menu"
+            class="inline-flex items-center p-2 ml-1 text-sm 0 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400-600"
+            aria-controls="mobile-menu-language-select"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              aria-hidden="true"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center duration-300 transition ease-linear justify-between hidden w-full md:flex md:w-auto lg:order-1"
+          id="mobile-menu"
+        >
+          <ul
+            class="flex flex-col headers font-medium p-4 md:p-0 mt-4 uppercase border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-violet-600 md:p-0"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-violet-600 md:p-0"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-violet-600 md:p-0"
+                >Contact Us / support</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-violet-600 md:p-0"
+                >news</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-violet-600 md:p-0"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="bg-violet-700"
+      style="background-image: url(./src/assets/Group\ 1.png)"
+    >
+      <section
+        class="min-h-[60vh] max-w-screen-xl text-white mx-auto flex justify-center items-center overflow-hidden"
+      >
+        <div class="grid mt-10 lg:grid-cols-2 grid-cols-1">
+          <div class="flex px-10 flex-col relative justify-center items-center">
+            <div class="mb-5">
+              <h1
+                class="headers md:text-5xl text-2xl font-semibold text-center lg:text-start mb-5"
+              >
+                Want to know why your employees are leaving?
+              </h1>
+              <p
+                class="capitalize md:text-sm text-[10px] max-w-sm mx-auto lg:mx-0 flex-wrap tracking-wide md:leading-6 text-center lg:text-start"
+              >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste,
+                officiis ullam quam, molestias iure obcaecati ab unde
+                perspiciatis repellendus ad
+              </p>
+            </div>
+            <div
+              class="w-full flex justify-center items-center lg:justify-start space-x-5 mb-5 font-semibold"
+            >
+              <div
+                class="text-white hover:text-violet-700 active:scale-95 cursor-pointer md:text-base text-xs py-2 px-4 border-white hover:border-violet-700 duration-200 ease-in transition border-2 rounded bg-transparent headers hover:bg-white md:mt-10 mt-5 flex space-x-2 items-center md:px-6 md:py-3"
+              >
+                Subscribe Now
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center relative">
+            <img src="./src/assets/hero.png" alt="" class="" />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="max-w-[1120px] mx-auto my-10">
+      <div class="flex flex-col items-center">
+        <span class="h-1 w-40 my-3 bg-violet-500 rounded-full"></span>
+        <h1 class="md:text-4xl headers text-2xl font-semibold mb-3 capitalize">
+          Losing an employee is expensive.
+        </h1>
+        <p class="0 text-sm tracking-wide">Learning why shouldn't be.</p>
+      </div>
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 mt-10">
+        <div class="flex items-center">
+          <div class="px-5 lg:px-0">
+            <p class="text-gray-500 leading-6 tracking-wide mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem minima dolorem unde magnam eius consequatur aspernatur
+              possimus fugiat natus culpa, pariatur iste sapiente officiis harum
+              saepe, sequi quam? Vero harum magni dolor ad nisi animi delectus
+              illo aspernatur neque. Ratione!
+            </p>
+            <p class="text-gray-500 leading-6 tracking-wide mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem minima dolorem unde magnam eius consequatur aspernatur
+              possimus fugiat natus culpa, pariatur iste sapiente officiis harum
+              saepe, sequi quam? Vero harum magni dolor ad nisi animi delectus
+              illo aspernatur neque. Ratione!
+            </p>
+            <div class="flex md:justify-start items-center justify-center">
+              <button
+                class="text-violet-500 font-semibold active:scale-95 hover:text-white cursor-pointer md:text-base text-xs py-2 px-4 border-violet-500 hover:border-white duration-200 ease-in transition border-2 rounded headers bg-transparent hover:bg-violet-500 md:mt-10 mt-5 flex space-x-2 items-center md:px-6 md:py-3"
+              >
+                Get Started Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-2 px-5 mt-10 md:mt-0 lg:px-0 md:gap-5 gap-10"
+        >
+          <div
+            class="p-5 flex flex-col mx-5 md:mx-0 justify-center items-center rounded-lg border-gray-100 border hover:shadow-xl shadow md:shadow-none duration-300 transition ease-linear"
+          >
+            <img src="./src/assets/laptop.png" class="w-16" alt="" />
+            <div class="">
+              <h1 class="my-5 text-center headers">VIEW DEMO</h1>
+            </div>
+            <button
+              class="py-2 uppercase px-4 active:scale-95 duration-150 bg-violet-500 rounded-lg text-white"
+            >
+              Learn more
+            </button>
+          </div>
+
+          <div
+            class="p-5 flex flex-col mx-5 md:mx-0 justify-center items-center rounded-lg border-gray-100 border hover:shadow-xl shadow md:shadow-none duration-300 transition ease-linear"
+          >
+            <img src="./src/assets/money.png" class="w-16" alt="" />
+            <div class="">
+              <h1 class="my-5 text-center headers">
+                HOW MUCH DOES IT REALLY COST TO REPLACE AN EMPLOYEE?
+              </h1>
+            </div>
+            <button
+              class="py-2 uppercase px-4 active:scale-95 duration-150 bg-violet-500 rounded-lg text-white"
+            >
+              Learn more
+            </button>
+          </div>
+
+          <div
+            class="p-5 flex flex-col mx-5 md:mx-0 justify-center items-center rounded-lg border-gray-100 border hover:shadow-xl shadow md:shadow-none duration-300 transition ease-linear"
+          >
+            <img src="./src/assets/heads.png" class="w-16" alt="" />
+            <div class="">
+              <h1 class="my-5 text-center headers">
+                INTEGRATE WITH YOUR HRIS, ATS OR USE OUR SYSTEM YOURSELF
+              </h1>
+            </div>
+            <button
+              class="py-2 uppercase px-4 active:scale-95 duration-150 bg-violet-500 rounded-lg text-white"
+            >
+              Learn more
+            </button>
+          </div>
+
+          <div
+            class="p-5 flex flex-col mx-5 md:mx-0 justify-center items-center rounded-lg border-gray-100 border hover:shadow-xl shadow md:shadow-none duration-300 transition ease-linear"
+          >
+            <img src="./src/assets/head.png" class="w-16" alt="" />
+            <div class="">
+              <h1 class="my-5 text-center headers">QUESTIONS?</h1>
+            </div>
+            <button
+              class="py-2 uppercase px-4 active:scale-95 duration-150 bg-violet-500 rounded-lg text-white"
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-screen-xl mx-auto my-10 mt-[6rem]">
+      <div class="flex flex-col items-center mb-10">
+        <span class="h-1 w-28 my-3 bg-violet-500 rounded-full"></span>
+        <h1 class="text-4xl font-semibold mb-3 headers capitalize">
+          How it works
+        </h1>
+        <p class="text-gray-500 text-sm tracking-wide">
+          Lorem ipsum dolor sit amet consectetur adipisicing.
+        </p>
+      </div>
+
+      <div>
+        <div class="mx-auto sticky">
+          <div class="container flex flex-col items-center w-full h-full">
+            <div class="relative wrap overflow-hidden p-10 h-full mb-4">
+              <div
+                class="border-2-2 border-yellow-555 absolute h-full border"
+                style="right: 50%; border: 2px solid #8b5cf6; border-radius: 1%"
+              ></div>
+              <div
+                class="border-2-2 border-yellow-555 absolute h-full border"
+                style="left: 50%; border: 2px solid #8b5cf6; border-radius: 1%"
+              ></div>
+              <div
+                class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+              >
+                <div class="order-1 w-5/12"></div>
+                <div class="order-1 w-5/12 px-1 py-4 text-right">
+                  <h4 class="headers mb-3 font-bold md:text-lg text-sm">
+                    Surveys are delivered to former employees using email and/or
+                    text messages.
+                  </h4>
+                  <p
+                    class="md:text-sm hidden md:inline-block text-xs leading-snug text-opacity-100"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore consectetur suscipit similique? Impedit, illum hic.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mb-8 flex justify-between items-center w-full right-timeline"
+              >
+                <div class="order-1 w-5/12"></div>
+                <div class="order-1 w-5/12 px-1 py-4 text-left">
+                  <h4 class="headers mb-3 font-bold md:text-lg text-sm">
+                    Works on computers and all mobile devices.
+                  </h4>
+                  <p
+                    class="md:text-sm text-xs hidden md:inline-block leading-snug text-opacity-100"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid corrupti possimus suscipit quo, consequuntur
+                    mollitia commodi odio voluptatibus optio ab.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+              >
+                <div class="order-1 w-5/12"></div>
+                <div class="order-1 w-5/12 px-1 py-4 text-right">
+                  <h4 class="headers mb-3 font-bold md:text-lg text-sm">
+                    Turnover activity reports are delivered monthly, weekly or
+                    as you want them.
+                  </h4>
+                  <p
+                    class="md:text-sm text-xs hidden md:inline-block leading-snug text-opacity-100"
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Odit illum ratione iusto tempora culpa recusandae, quo iure.
+                    Odio, atque iure!
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="mb-8 flex justify-between items-center w-full right-timeline"
+              >
+                <div class="order-1 w-5/12"></div>
+
+                <div class="order-1 w-5/12 px-1 py-4">
+                  <h4
+                    class="headers mb-3 font-bold md:text-lg text-sm text-left"
+                  >
+                    Turnover patterns are easily identified so you can focus on
+                    solving the problem.
+                  </h4>
+                  <p
+                    class="md:text-sm text-xs hidden md:inline-block leading-snug text-opacity-100"
+                  >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus, dicta.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img class="mx-auto -mt-32 md:-mt-36" src="./src/assets/time.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-violet-200 p-5"
+      style="background-image: url(./src/assets/Group\ 1.png)"
+    >
+      <div class="mx-auto max-w-[1120px] py-10">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+          <div class="mb-6 md:col-span-2 col-span-1">
+            <a
+              href="/"
+              class="flex text-2xl lg:text-3xl md:mb-6 items-center justify-center md:justify-start"
+            >
+              <img
+                src="./src/assets/ez.png"
+                class="mr-3 h-16"
+                alt="FlowBite Logo"
+              />
+            </a>
+            <span
+              class="text-xs md:mt-10 mt-5 sm:text-center flex justify-center md:justify-start"
+            >
+              © 2023 EZEI.com LLC. All Rights Reserved.
+            </span>
+          </div>
+
+          <div class="col-span-1 my-10 md:my-0">
+            <h5
+              class="mb-6 font-semibold text-gray-900 uppercase text-center md:text-start"
+            >
+              EZexitinterview.com
+            </h5>
+            <ul
+              class="text-sm uppercase flex flex-col items-center md:items-start"
+            >
+              <li class="leading-9 tracking-wide">
+                <a href="/" class="hover:underline"> About Us </a>
+              </li>
+              <li class="leading-9 tracking-wide">
+                <a href="/about" class="hover:underline">
+                  CONTACT US / SUPPORT</a
+                >
+              </li>
+              <li class="leading-9 tracking-wide">
+                <a href="/" class="hover:underline"> PRIVACY POLICY </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-span-1">
+            <h5
+              class="mb-6 font-semibold text-gray-900 uppercase text-center md:text-start"
+            >
+              Contact Support
+            </h5>
+            <ul
+              class="text-sm uppercase flex flex-col items-center md:items-start"
+            >
+              <li class="leading-9 tracking-wide">
+                <a
+                  href="mailto:client.support@ezexitinterview.com"
+                  class="hover:underline"
+                >
+                  client.support@ezexitinterview.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="my-6 border-violet-700 sm:mx-auto" />
+        <div class="flex items-center justify-center my-6 lg:my-6">
+          <span class="text-sm text-center">
+            © JOSHUA CLIFFORD . All Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menu = document.getElementById("menu");
+      const mobileNav = document.getElementById("mobile-menu");
+
+      menu.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
